@@ -1,0 +1,68 @@
+builder>>>>```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaquinha Patriótica - Liberdade do Nosso Mito</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .progress-bar {
+            transition: width 0.5s ease-in-out;
+        }
+        .btn-donate {
+            transition: all 0.3s ease;
+        }
+        .btn-donate:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(234, 179, 8, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-blue-50 to-green-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm border-b border-yellow-300 sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mr-3">
+                        <i class="fas fa-flag text-yellow-400 text-xl"></i>
+                    </div>
+                    <h1 class="text-2xl font-bold text-green-700">Vaquinha Patriótica</h1>
+                </div>
+                <button class="bg-yellow-500 text-green-900 hover:bg-yellow-600 px-6 py-2 rounded-lg font-semibold transition-colors btn-donate"
+                        onclick="handleDonate()">
+                    Doar R$ 19,99
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-gradient-to-r from-green-500 to-yellow-500 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <div class="bg-yellow-400 text-green-900 font-bold py-2 px-4 rounded-full inline-block mb-6">
+                <i class="fas fa-gift mr-2"></i>
+                BRINDE EXCLUSIVO INCLUÍDO
+            </div>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                Doe R$ 19,99 e Ganhe uma Camisa da Liberdade!
+            </h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">
+                Contribua com apenas R$ 19,99 pela liberdade do nosso mito e receba de brinde 
+                uma camisa exclusiva "Liberdade Aprisonada". Mostre seu apoio com estilo!
+            </p>
+            <div class="bg-white rounded-lg p-6 max-w-2xl mx-auto shadow-lg">
+                <div class="text-green-900 text-center mb-4">
+                    <div class="text-3xl font-bold mb-2">R$ 2.547.890</div>
+                    <div class="text-sm">Arrecadado de R$ 5.000.000</div>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-4 mb-6">
+                    <div class="bg-gradient-to-r from-green-600 to-yellow-500 h-4 rounded-full progress-bar" style="width: 51%"></div>
+                </div>
